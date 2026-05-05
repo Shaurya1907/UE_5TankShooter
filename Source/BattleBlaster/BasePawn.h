@@ -36,6 +36,9 @@ public:
 	TSubclassOf<AProjectile> ProjectileClass;
 
 	UPROPERTY(EditAnywhere)
+	TSubclassOf<UCameraShakeBase> DeathCameraShakeClass;
+
+	UPROPERTY(EditAnywhere)
 	USoundBase* ExplodeSound;
 
 	UPROPERTY(EditAnywhere)

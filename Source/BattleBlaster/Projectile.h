@@ -45,6 +45,9 @@ public:
 	USoundBase* HitSound;
 
 	UPROPERTY(EditAnywhere)
+	TSubclassOf<UCameraShakeBase> HitCameraShakeClass;
+
+	UPROPERTY(EditAnywhere)
 	UNiagaraSystem* HitParticles;
 
 	UPROPERTY(EditAnywhere)
