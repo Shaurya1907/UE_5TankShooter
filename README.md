@@ -1,29 +1,40 @@
-🪖 Battle Blaster (UE5 Tank Shooter)
-A 3D Tank Shooter built with Unreal Engine 5 and C++
+# 🪖 Battle Blaster — UE5 Tank Shooter
 
-A real-time combat game focused on implementing core gameplay systems such as movement, shooting mechanics, AI behavior, and game state management using Unreal Engine’s C++ framework.
+A 3D tank combat game built with **Unreal Engine 5** and **C++**, featuring real-time movement, projectile-based combat, AI-controlled enemies, and full game state management.
 
-This project demonstrates how fundamental game development concepts come together to form a complete playable experience.
+![Unreal Engine](https://img.shields.io/badge/Unreal%20Engine-5-313131?logo=unrealengine)
+![C++](https://img.shields.io/badge/C%2B%2B-92.4%25-00599C?logo=cplusplus)
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
-🎮 Overview
+---
 
-Control a tank in an arena filled with AI-controlled towers and survive while eliminating all enemies.
+## 🎮 Overview
 
-Destroy all enemy towers before they eliminate you
-Avoid incoming projectiles using movement and positioning
-Aim precisely and manage combat situations strategically
+Control a tank in an arena filled with AI-controlled enemy towers and fight to survive.
 
-The game emphasizes clean architecture, modular design, and reusable systems.
+- Destroy all enemy towers before they eliminate you
+- Dodge incoming projectiles using movement and positioning
+- Aim precisely and manage combat strategically
 
-⚙️ Features
-🚗 Player-controlled tank movement
-🎯 Turret rotation and aiming system
-💣 Projectile-based combat
-❤️ Health and damage system
-🤖 AI-controlled enemy towers
-🧠 Game mode with win/lose conditions
-📢 On-screen debug messaging
-🏗️ Project Structure
+The project focuses on clean architecture, modular components, and reusable systems — demonstrating how core gameplay mechanics combine into a complete playable experience.
+
+---
+
+## ⚙️ Features
+
+- 🚗 Player-controlled tank movement
+- 🎯 Turret rotation and aiming system
+- 💣 Projectile-based combat
+- ❤️ Health and damage system
+- 🤖 AI-controlled enemy towers
+- 🧠 Game mode with win/lose conditions
+- 📢 On-screen debug messaging
+
+---
+
+## 🏗️ Project Structure
+
+```
 Source/
 │
 ├── BasePawn
@@ -35,30 +46,31 @@ Source/
 ├── BattleBlasterGameInstance
 ├── ScreenMessage
 └── BattleBlaster
-🧩 System Overview
-🔹 BasePawn
+```
 
-Handles shared functionality such as mesh setup, turret rotation, and firing logic. Acts as the foundation for both player and enemy entities.
+---
 
-🔹 Tank
+## 🧩 System Overview
 
-Player-controlled pawn responsible for movement, input handling, and camera control. Implements user interaction with the game world.
+### BasePawn
+Shared functionality for mesh setup, turret rotation, and firing logic. Acts as the foundation for both player and enemy entities.
 
-🔹 Tower
+### Tank
+Player-controlled pawn responsible for movement, input handling, and camera control.
 
+### Tower
 Enemy AI unit that continuously tracks the player, rotates its turret, and fires projectiles automatically.
 
-🔹 Projectile
+### Projectile
+Handles movement, collision detection, and damage application on impact.
 
-Handles movement, collision detection, and damage application upon impact.
+### HealthComponent
+A reusable component managing damage intake, health tracking, and destruction behavior.
 
-🔹 HealthComponent
+### GameMode
+Controls overall game flow — initialization, win conditions, and loss conditions.
 
-A reusable component that manages damage intake, health tracking, and destruction behavior.
-
-🔹 GameMode
-
-Controls overall game flow, including initialization, win conditions, and loss conditions.
+---
 
 ## 📸 Screenshots
 
@@ -74,37 +86,48 @@ Controls overall game flow, including initialization, win conditions, and loss c
 ### 🏆 Victory State
 ![Victory](Images/demo2.png)
 
-🎮 Controls
-Action	Key
-Move Forward	W
-Move Backward	S
-Turn Left	A
-Turn Right	D
-Aim	Mouse
-Fire	Left Click
-⚙️ Setup Instructions
-1. Clone the repository
-git clone https://github.com/Shaurya1907/UE_5TankShooter.git
-2. Open the project
+---
 
-Open the .uproject file in Unreal Engine 5
+## 🎮 Controls
 
-3. Build
+| Action        | Key        |
+|---------------|------------|
+| Move Forward  | W          |
+| Move Backward | S          |
+| Turn Left     | A          |
+| Turn Right    | D          |
+| Aim           | Mouse      |
+| Fire          | Left Click |
 
-Compile the project inside the editor
+---
 
-4. Run
+## ⚙️ Setup Instructions
 
-Press Play to start the game
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Shaurya1907/UE_5TankShooter.git
+   ```
+2. **Open the project**
+   Open the `BattleBlaster.uproject` file in Unreal Engine 5.
+3. **Build**
+   Compile the project inside the editor.
+4. **Run**
+   Press **Play** to start the game.
 
-This project is licensed under the MIT License. See the Licence.txt file for details.
+---
 
-🧠 Notes
+## 🧠 Notes
 
 This project was developed to strengthen understanding of:
 
-Object-oriented programming in C++
-Unreal Engine gameplay architecture (Actors, Pawns, Components)
-AI behavior and interaction systems
-Collision detection and physics handling
-Game loop design and state management
+- Object-oriented programming in C++
+- Unreal Engine gameplay architecture (Actors, Pawns, Components)
+- AI behavior and interaction systems
+- Collision detection and physics handling
+- Game loop design and state management
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License. See [License.txt](License.txt) for details.
